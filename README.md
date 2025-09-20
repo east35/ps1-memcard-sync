@@ -17,9 +17,9 @@ This container:
 - Ignores hidden/temp/Syncthing artifacts
 
 It’s best to start a new game/save from MiSTer first, because:
-	1.	MiSTer sets the canonical filename — the save is tied to the exact ROM name MiSTer loads. If the file doesn’t exist, MiSTer won’t auto-detect it, even if the data inside is valid.
-	2.	Ensures the correct format/endianness — MiSTer’s PSX and N64 cores expect memory cards and SRAM in a specific byte order. If you import a handheld save cold, MiSTer may not recognize it.
-	3.	Safe overwrite behavior — once MiSTer has created the base file (.sav, .sra, etc.), sync scripts can safely overwrite it with handheld updates without breaking detection.
+- MiSTer sets the canonical filename — the save is tied to the exact ROM name MiSTer loads. If the file doesn’t exist, MiSTer won’t auto-detect it, even if the data inside is valid.
+- Ensures the correct format/endianness — MiSTer’s PSX and N64 cores expect memory cards and SRAM in a specific byte order. If you import a handheld save cold, MiSTer may not recognize it.
+- Safe overwrite behavior — once MiSTer has created the base file (.sav, .sra, etc.), sync scripts can safely overwrite it with handheld updates without breaking detection.
 
 ## Quick run
 
