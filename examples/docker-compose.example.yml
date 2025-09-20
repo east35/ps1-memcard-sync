@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  ps1-memcard-sync:
+    image: ghcr.io/<youruser>/ps1-memcard-sync:latest
+    container_name: ps1-memcard-sync
+    restart: unless-stopped
+    environment:
+      PUID: 1026   # replace with your UID (id <user>)
+      PGID: 100    # replace with your GID
+      WATCH_DIR: /watch
+      POLL_INTERVAL: 2
+    volumes:
+      - /volume1/MiSTer/saves/PSX:/watch:rw

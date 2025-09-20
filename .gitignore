@@ -1,0 +1,26 @@
+# Logs
+*.log
+*.err
+*.out
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Docker build artifacts
+*.tar
+*.bak
+*.old
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# VSCode / JetBrains configs
+.vscode/
+.idea/
+
+# Python venvs (if you add helper scripts later)
+venv/
+__pycache__/
